@@ -1,0 +1,25 @@
+@media (max-width: 602px) {#tabs button {font-size: 10px}}
+
+@media (max-width: 417px) {#tabs button:first-of-type {font-size: 7px}}
+
+* {font-family: Roboto}
+
+*::-moz-selection {background: rgba(0, 0, 0, .1)}
+
+body {
+	margin: 0;
+	overflow-x: hidden;
+	background: #EEE;
+	cursor: default;
+	text-align: center
+}
+
+header {
+	height: 280px;
+	background: url(../img/header.png) center center fixed;
+	background-size: cover
+}
+
+article {padding-top: 16px}
+
+img {width: 48px; height: 48px}

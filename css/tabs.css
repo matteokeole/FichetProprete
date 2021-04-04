@@ -1,0 +1,23 @@
+#tabs button {
+	width: 25%;
+	height: 48px;
+	margin: 0 -2px;
+	border: none;
+	border-radius: 5px 5px 0 0;
+	background: none;
+	color: rgba(255, 255, 255, .7);
+	font-size: 14px;
+	font-weight: 600;
+	transition: .2s
+}
+
+#tabs button:hover {background: rgba(0, 0, 0, .1); color: #FFF}
+
+#tabs button:active {
+	padding: 0;
+	background: rgba(0, 0, 0, .2);
+	color: #FFF;
+	transition: .1s
+}
+
+#tabs .active {border-bottom: 2px solid #FFF; color: #FFF}

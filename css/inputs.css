@@ -1,0 +1,37 @@
+.text {margin-bottom: 16px; position: relative}
+
+input[type="text"] {
+	display: block;
+	width: 200px;
+	padding: 8px 8px 8px 0;
+	border: none;
+	border-bottom: 2px solid #757575;
+	box-shadow: none;
+	color: #6D4C41;
+	font-size: 16px;
+	transition: .2s
+}
+
+label {
+	top: 8px;
+	position: absolute;
+	pointer-events: none;
+	color: #757575;
+	font-size: 16px;
+	transition: .2s
+}
+
+.error {
+	height: 0;
+	color: #FFF;
+	font-size: 12px;
+	transition: .2s
+}
+
+input[type="text"]:focus {border-bottom-color: #6D4C41}
+
+input[type="text"]:focus ~ label, input[type="text"]:valid ~ label {
+	top: -10px;
+	color: #6D4C41;
+	font-size: 12px
+}
