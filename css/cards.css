@@ -1,10 +1,9 @@
 .cards {
 	margin: 16px;
-	padding: 8px;
-	padding-left: 16px;
+	padding: 8px 8px 8px 16px;
 	border-radius: 4px;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, .4);
-	background: #FFF
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+	background-color: #fff
 }
 
 .cards-actions {text-align: right}

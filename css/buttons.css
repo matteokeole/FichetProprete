@@ -1,52 +1,56 @@
 button {
-	padding: 0;
-	background: none;
-	cursor: pointer;
-	font-weight: 600;
-	transition: .3s
-}
-
-button:active {transition: .1s}
-
-button {
 	min-width: 88px;
 	height: 36px;
 	padding: 0 16px;
 	border: none;
 	border-radius: 4px;
-	color: #1976D2;
-	font-size: 14px
+	background-color: transparent;
+	color: #1976d2;
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 600;
+	transition: 0.3s
 }
 
-button:hover {background: rgba(25, 118, 210, .2)}
+button:hover {background-color: rgba(25, 118, 210, 0.2)}
 
-button:active {background: rgba(25, 118, 210, .4); transition: .1s}
+button:active {
+	background-color: rgba(25, 118, 210, 0.4);
+	transition: 0.1s
+}
 
-#instagram_account {
-	padding: 30px 0 0 0;
+#button-1:hover {background-color: rgba(74, 20, 140, 0.2)}
+#button-1:active {background-color: rgba(74, 20, 140, 0.4)}
+
+#button-2:hover {background-color: rgba(76, 175, 80, 0.2)}
+#button-2:active {background-color: rgba(76, 175, 80, 0.4)}
+
+.insta {
+	padding-top: 30px;
 	outline: none;
 	border: none;
-	background: none;
 	cursor: pointer;
-	transition: .2s
+	transition: 0.2s
 }
 
-#instagram_account:hover {filter: brightness(.5); -webkit-filter: brightness(.5)}
-
-#instagram_account:active {
-	filter: brightness(.4);
-	-webkit-filter: brightness(.4);
-	transition: .1s
+.insta:hover {
+	-webkit-filter: brightness(0.5); /* chrome/safari/opera */
+	-ms-filter: brightness(0.5); /* ie */
+	filter: brightness(0.5)
 }
 
-a {outline: none; color: #1976D2; font-weight: bold; text-decoration: none}
+.insta:active {
+	-webkit-filter: brightness(0.4); /* chrome/safari/opera */
+	-ms-filter: brightness(0.4); /* ie */
+	filter: brightness(0.4);
+	transition: 0.1s
+}
 
-/* RGB colors on buttons transitions */
+a {
+	outline: none;
+	color: #1976d2;
+	font-weight: bold;
+	text-decoration: none
+}
 
-#button-1:hover {background: rgba(74, 20, 140, .2)}
-
-#button-1:active {background: rgba(74, 20, 140, .4)}
-
-#button-2:hover {background: rgba(76, 175, 80, .2)}
-
-#button-2:active {background: rgba(76, 175, 80, .4)}
+#contact_link {display: none}

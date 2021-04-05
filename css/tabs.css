@@ -3,21 +3,26 @@
 	height: 48px;
 	margin: 0 -2px;
 	border: none;
-	border-radius: 5px 5px 0 0;
-	background: none;
-	color: rgba(255, 255, 255, .7);
+	border-radius: 0 0 0 0;
+	color: rgba(255, 255, 255, 0.7);
 	font-size: 14px;
 	font-weight: 600;
-	transition: .2s
+	transition: 0.2s
 }
 
-#tabs button:hover {background: rgba(0, 0, 0, .1); color: #FFF}
+#tabs button:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+	color: #fff
+}
 
 #tabs button:active {
 	padding: 0;
-	background: rgba(0, 0, 0, .2);
-	color: #FFF;
-	transition: .1s
+	background-color: rgba(0, 0, 0, 0.2);
+	color: #fff;
+	transition: 0.1s
 }
 
-#tabs .active {border-bottom: 2px solid #FFF; color: #FFF}
+#tabs .active {
+	border-bottom: 2px solid #fff;
+	color: #fff
+}
