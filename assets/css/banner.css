@@ -1,0 +1,5 @@
+.banner {
+	height: 33vh;
+	background: url(../images/header.png) center fixed no-repeat;
+	background-size: 100%
+}

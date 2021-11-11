@@ -1,70 +1,68 @@
+<!--
+	Fichet Propreté, cleaning enterprise for individuals, professionnals, co-ownerships and construction sites.
+	GitHub repository: https://github.com/matteoo34/FichetProprete
+	Made by Mattéo Legagneux
+	Copyright (C) 2021
+-->
+
 <!DOCTYPE html>
 
-<html lang="fr">
-	
+<html prefix="og: http://ogp.me/ns#" lang="fr">
+
 	<head>
 		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-		<meta name="version" content="1.1.0">
-		<meta name="description" content="Vous n'aimez pas nettoyer ? Pas de souci ! FICHET PROPRETÉ le fait pour vous !">
-		<meta name="keywords" content="fichet, propreté, nettoyage, entretien, vitres">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Entreprise de nettoyage pour particuliers, professionnels, copropriétés et chantiers.">
+		<meta name="keywords" content="olivier, fichet, propreté, nettoyage, entretien, vitres, cleaning, enterprises, mattéo, legagneux">
 		<meta name="author" content="Mattéo Legagneux">
-		<meta name="contact" content="fichetproprete@gmail.com">
-		<meta name="theme-color" content="#1976d2">
-		<!-- <link rel="icon" href="favicon.png"> -->
-		<link rel="stylesheet" type="text/css" href="fonts/fonts.css">
-		<link rel="stylesheet" type="text/css" href="css/inputs.css">
-		<link rel="stylesheet" type="text/css" href="css/bars.css">
-		<link rel="stylesheet" type="text/css" href="css/buttons.css">
-		<link rel="stylesheet" type="text/css" href="css/cards.css">
-		<link rel="stylesheet" type="text/css" href="css/main.css">
-		<link rel="stylesheet" type="text/css" href="css/tabs.css">
-		<script type="text/javascript" src="main.js"></script>
-		<title>Accueil | FICHET PROPRETÉ</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="assets/css/main.css">
+		<title>Accueil | Fichet Propreté</title>
 	</head>
 
 	<body>
-		<header></header>
-
-		<nav>
-			<p style="padding: 5px" class="nav_title"><b></b></p>
-			<section id="tabs">
-				<button onclick="location.reload()">FICHET PROPRETÉ</button>
-				<button id="home" class="active">ACCUEIL</button>
-				<button id="photos">PHOTOS</button>
-				<button id="contact">CONTACT</button>
-			</section>
-		</nav>
-
-		<article style="margin-top: 100px">
-			<p class="page_title"></p>
-			<content class="home">
+		<!-- Banner -->
+		<div class="banner"></div>
+		<!-- Header -->
+		<header role="banner">
+			<div class="header-title"></div>
+			<nav role="navigation">
+				<button class="btn btn-title">FICHET PROPRETÉ</button>
+				<button class="btn btn-home active">ACCUEIL</button>
+				<button class="btn btn-photos">PHOTOS</button>
+				<button class="btn btn-contact">CONTACT</button>
+			</nav>
+		</header>
+		<!-- Content -->
+		<main role="main">
+			<h1 class="title">home</h1>
+			<section role="region" class="home-container">
 				<p id="infos"></p>
-				<button id="individuals">PARTICULIERS</button>
-				<button id="pros">PROFESSIONNELS</button>
-				<button id="coownerships">COPROPRITÉTÉS</button>
-				<button id="constructions">CHANTIERS</button>
-				<p id="thatsnice">FICHET PROPRETÉ vous facilite la vie...</p>
-				<section class="cards">
-					<img src="img/checkbox1.png" alt="">
+				<div class="clients">
+					<button class="link individuals">Particuliers</button>
+					<button class="link pros">Professionnels</button>
+					<button class="link coownerships">Copropriétés</button>
+					<button class="link constructions">Chantiers</button>
+				</div>
+				<p id="thatsnice">Nous vous facilitons la vie...</p>
+				<div class="card-container">
+					<img src="assets/images/checkbox1.png" alt="">
 					<h2 style="color: #4a148c">Devis gratuit</h2>
-					<section class="cards-actions">
-						<button id="button-1" style="color: #4a148c">DEMANDER</button>
-					</section>
-				</section>
-				<section class="cards">
-					<img src="img/checkbox2.png" alt="">
+					<div class="actions">
+						<button class="btn btn-estimate">NOUS DEMANDER</button>
+					</div>
+				</div>
+				<div class="card-container">
+					<img src="assets/images/checkbox2.png" alt="">
 					<p style="color: #4caf50">Pour plus d'informations</p>
 					<h2 style="color: #4caf50">06 88 39 88 39</h2>
-					<section class="cards-actions">
-						<button id="button-2" style="color: #4caf50">
-							<a href="tel:0688398839" style="color: #4caf50">APPELER</a>
-						</button>
-					</section>
-				</section>
-			</content>
-			<content class="photos"></content>
-			<content class="contact">
+					<div class="actions">
+						<a href="tel:0688398839" class="btn btn-call">NOUS APPELER</a>
+					</div>
+				</div>
+			</section>
+			<section role="region" class="photos-container"></section>
+			<section role="region" class="contact-container">
 				<p class="infos_contact"></p>
 				<!-- <form method="POST">
 					<input type="text" name="firstName" placeholder="Prénom"><br><br>
@@ -77,23 +75,29 @@
 					<input type="email" name="email" placeholder="E-mail"><br><br>
 					<button class="flat">ENVOYER</button><br><br>
 				</form> -->
-			</content>
-			<content class="individuals"></content>
-			<content class="pros"></content>
-			<content class="coownerships"></content>
-			<content class="constructions"></content>
-			<a href="mailto:fichetproprete@gmail.com" id="contact_link">DEMANDER UN DEVIS GRATUIT</a>
-		</article>
-
-		<footer>
-			<p>
-				<a class="insta" href="https://www.instagram.com/fichetproprete" target="_blank">
-					<img src="img/insta.png">
-				</a><br><br>
-				© 2018 Mattéo Legagneux<br>
-				Tous droits réservés
-			</p>
+			</section>
+			<section role="region" class="individuals-container"></section>
+			<section role="region" class="pros-container"></section>
+			<section role="region" class="coownerships-container"></section>
+			<section role="region" class="constructions-container"></section>
+			<!-- <a href="mailto:fichetproprete@gmail.com" class="link">DEMANDER UN DEVIS GRATUIT</a> -->
+		</main>
+		<!-- Footer -->
+		<footer role="contentinfo">
+			<a class="ig" href="https://www.instagram.com/fichetproprete" target="_blank" title="Retrouvez-nous sur Instagram" aria-label="Retrouvez-nous sur Instagram">
+				<ion-icon name="logo-instagram"></ion-icon>
+			</a>
+			<div class="copyright">
+				Copyright &copy; 2021 <a href="#" class="link">Mattéo Legagneux</a>.<br>
+				Tous droits réservés.
+			</div>
 		</footer>
+
+		<!-- Scripts -->
+		<!-- <script src="assets/js/main.js"></script> -->
+		<!-- Ionicons 5.5.2 -->
+		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 	</body>
 
 </html>

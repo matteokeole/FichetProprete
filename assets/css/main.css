@@ -1,0 +1,48 @@
+/** Main styles **/
+
+/* CSS imports */
+@import url(fonts.css); /* Fonts */
+@import url(banner.css); /* Banner */
+@import url(header.css); /* Header */
+@import url(nav.css); /* Navbar */
+@import url(footer.css); /* Footer */
+@import url(buttons.css); /* Buttons */
+@import url(cards.css);
+/*@import url(inputs.css);*/
+
+/* Colors */
+:root {
+	--primary: #1976d2; /* Sky blue */
+	--secondary: #fff; /* White */
+	--card-1: #4a148c; /* Purple */
+	--card-2: #4caf50 /* Light green */
+}
+
+body {
+	margin: 0;
+	overflow-x: hidden;
+	background-color: #eee;
+	cursor: default;
+	text-align: center
+}
+
+main {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	padding: 16px 0
+}
+
+section {
+	width: 70%;
+}
+
+img {
+	width: 48px;
+	height: 48px
+}
+
+/* Media queries */
+
+@media (max-width: 602px) {#tabs button {font-size: 10px}}
+@media (max-width: 417px) {#tabs button:first-of-type {font-size: 7px}}

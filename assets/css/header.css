@@ -1,0 +1,17 @@
+/** Header **/
+
+header {
+	top: 0;
+	position: sticky;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	background-color: var(--primary);
+	color: var(--secondary);
+	font-weight: 600;
+	z-index: 10
+}
+
+header .header-title {
+	height: 60px;
+	line-height: 60px;
+	padding: 5px
+}

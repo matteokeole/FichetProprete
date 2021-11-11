@@ -1,0 +1,14 @@
+/** Fonts imports **/
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+	font-family: Roboto;
+	font-weight: 400
+}
+
+.header-title {font-weight: 700}
+
+/* Text selection color */
+::-moz-selection {background-color: rgba(0, 0, 0, 0.1)}
+::selection {background-color: rgba(0, 0, 0, 0.1)}
