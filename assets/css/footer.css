@@ -1,21 +1,17 @@
+/** Footer **/
+
 footer {
 	display: flex;
-	align-items: center;
 	justify-content: space-between;
+	height: 80px;
 	padding: 8px;
 	background-color: var(--primary);
 	color: #fff
 }
 
-footer .ig {
-	width: 48px;
-	height: 48px;
-	background-color: orange
-}
-
 /* Copyright section */
-
 footer .copyright {
+	padding: 4px 0;
 	opacity: 0.65;
 	text-align: right;
 	font-size: 14px

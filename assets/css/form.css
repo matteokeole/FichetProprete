@@ -1,0 +1,54 @@
+/** Contact form **/
+
+form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 16px 0
+}
+
+label {
+	display: block;
+	margin-bottom: 24px;
+	position: relative;
+	opacity: 0.65;
+	transition-duration: 0.2s
+}
+label:focus-within {opacity: 1}
+
+input {
+	width: 300px;
+	padding: 8px 0;
+	outline: none;
+	border: none;
+	border-bottom: 1px solid var(--card-estimate);
+	background-color: transparent;
+	color: var(--card-estimate);
+	font-size: 16px
+}
+
+.label {
+	top: 8px;
+	left: 0;
+	position: absolute;
+	color: var(--card-estimate);
+	pointer-events: none;
+	transition-duration: 0.2s
+}
+.label.focused {
+	top: -10px;
+	font-size: 12px
+}
+
+/* Confirmation message */
+
+.form-confirmation {
+	padding: 8px 16px;
+	border-radius: 4px;
+	color: var(--secondary)
+}
+.form-confirmation.valid {background-color: var(--valid)}
+.form-confirmation.invalid {background-color: var(--invalid)}
+
+/* Required fields info */
+section[data-section="contact"] p i {opacity: 0.65}

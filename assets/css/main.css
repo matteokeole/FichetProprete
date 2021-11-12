@@ -5,44 +5,54 @@
 @import url(banner.css); /* Banner */
 @import url(header.css); /* Header */
 @import url(nav.css); /* Navbar */
+@import url(cards.css); /* Cards */
 @import url(footer.css); /* Footer */
-@import url(buttons.css); /* Buttons */
-@import url(cards.css);
-/*@import url(inputs.css);*/
+@import url(btn.css); /* Buttons */
+@import url(form.css); /* Contact form */
 
 /* Colors */
 :root {
 	--primary: #1976d2; /* Sky blue */
+	--primary-light: rgba(25, 118, 210, 0.2); /* Light sky blue */
+	--primary-light-2: rgba(25, 118, 210, 0.4); /* Light sky blue 2 */
 	--secondary: #fff; /* White */
-	--card-1: #4a148c; /* Purple */
-	--card-2: #4caf50 /* Light green */
+	--background: #eee; /* Very light gray */
+	--card-estimate: #4a148c; /* Purple */
+	--card-call: #4caf50; /* Light green */
+	--valid: #a4bd01; /* Nature green */
+	--invalid: #c51d34 /* Error red */
 }
 
 body {
 	margin: 0;
-	overflow-x: hidden;
-	background-color: #eee;
-	cursor: default;
-	text-align: center
+	background-color: var(--background)
 }
 
 main {
 	display: flex;
 	align-items: center;
 	flex-direction: column;
+	min-height: 50vh;
 	padding: 16px 0
 }
 
 section {
+	display: none;
 	width: 70%;
+	text-align: center
 }
+section.current {display: block}
 
-img {
-	width: 48px;
-	height: 48px
+.clients button {
+	margin-bottom: 8px;
+	padding: 4px 8px
 }
+.clients button::before {top: 0}
 
 /* Media queries */
 
-@media (max-width: 602px) {#tabs button {font-size: 10px}}
-@media (max-width: 417px) {#tabs button:first-of-type {font-size: 7px}}
+/* 1024px max */
+@media screen and (max-width: 1024px) {section {width: 80% !important}}
+
+/* 780px max */
+@media screen and (max-width: 780px) {section {width: 90% !important}}

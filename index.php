@@ -1,0 +1,195 @@
+<!--
+	Fichet Propreté, cleaning enterprise for individuals, professionnals, co-ownerships and construction sites.
+	GitHub repository: https://github.com/matteoo34/FichetProprete
+	Made by Mattéo Legagneux
+	Copyright (C) 2021
+-->
+
+<!DOCTYPE html>
+
+<html prefix="og: http://ogp.me/ns#" lang="fr">
+
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Entreprise de nettoyage pour particuliers, professionnels, copropriétés et chantiers.">
+		<meta name="keywords" content="olivier, fichet, propreté, nettoyage, entretien, vitres, cleaning, enterprises, mattéo, legagneux">
+		<meta name="author" content="Mattéo Legagneux">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="stylesheet" href="assets/css/main.css">
+		<title>Accueil | Fichet Propreté</title>
+	</head>
+
+	<body>
+		<!-- Banner -->
+		<div class="banner"></div>
+		<!-- Header -->
+		<header role="banner">
+			<div class="header-title">Accueil</div>
+			<!-- Navbar -->
+			<nav role="navigation">
+				<button class="btn btn-title" title="Actualiser la page" aria-label="Actualiser la page">FICHET PROPRETÉ</button>
+				<button class="btn btn-home active" data-section="home">ACCUEIL</button>
+				<button class="btn btn-photos" data-section="photos">PHOTOS</button>
+				<button class="btn btn-contact" data-section="contact">CONTACT</button>
+			</nav>
+		</header>
+		<!-- Content -->
+		<main role="main">
+			<?php
+				if (!empty($_POST["submit"])) {
+					$msg = "Test mail\nTéléphone : " . $_POST["phoneNumber"];
+					$from = $_POST["firstName"] . " " . $_POST["lastName"] . " (" . $_POST["email"] . ")";
+					$headers = "From: " . $_POST["email"] . "\r\nMIME-Version: 1.0\r\nContent-Type: text/html; charset=ISO-8859-1\r\nX-Priority: 1";
+					$send = mail(
+						"matteoo34@icloud.com",
+						"Fichet Propreté",
+						$msg,
+						$headers
+					);
+					// Form submit status
+					echo "<div class='form-confirmation " . ($send ? "valid'>Votre demande a bien été envoyée." : "invalid'>Votre demande n'a pas pu être envoyée.") . "</div>";
+				}
+			?>
+			<h1 id="title">Accueil</h1>
+			<!-- Home -->
+			<section role="region" class="current" data-section="home">
+				<p>
+					Vous n'aimez pas nettoyer ?<br>
+					Pas de souci ! Fichet Propreté le fait pour vous !
+				</p>
+				<div class="clients">
+					<button class="link individuals">Particuliers</button>
+					<button class="link pros">Professionnels</button>
+					<button class="link coownerships">Copropriétés</button>
+					<button class="link constructions">Chantiers</button>
+				</div>
+				<p>Nous vous facilitons la vie !</p>
+				<!-- Estimate card -->
+				<div class="card-container card-estimate">
+					<div class="content">
+						<ion-icon name="checkmark"></ion-icon>
+						<h2>Devis gratuit</h2>
+					</div>
+					<div class="actions">
+						<button class="btn">NOUS DEMANDER</button>
+					</div>
+				</div>
+				<!-- Call card -->
+				<div class="card-container card-call">
+					<div class="content">
+						<ion-icon name="call"></ion-icon>
+						<div class="content-inner">
+							<i>Pour plus d'informations</i>
+							<h2>06 88 39 88 39</h2>
+						</div>
+					</div>
+					<div class="actions">
+						<a href="tel:0688398839" class="btn">NOUS APPELER</a>
+					</div>
+				</div>
+			</section>
+			<!-- Photos -->
+			<section role="region" data-section="photos">
+				<p>Aucune photo... pour l'instant.</p>
+			</section>
+			<!-- Individuals -->
+			<section role="region" data-section="individuals">
+				<p>
+					Si vous êtes à la recherche d'une personne discrète, soigneuse et efficace pour laver vos vitres ou nettoyer votre terrasse, véranda ou autre, n'hésitez pas à demander un devis gratuit à l'adresse <b>fichetproprete@gmail.com</b>.
+				</p>
+			</section>
+			<!-- Professionals -->
+			<section role="region" data-section="professionals">
+				<p>
+					Si vous êtes à la recherche d'une personne discrète, soigneuse et efficace pour laver vos vitres ou nettoyer des bureaux, locaux ou autre, n'hésitez pas à demander un devis gratuit à l'adresse <b>fichetproprete@gmail.com</b>.
+				</p>
+			</section>
+			<!-- Co-ownerships -->
+			<section role="region" data-section="coownerships">
+				<p>
+					Si vous êtes à la recherche d'une personne discrète, soigneuse et efficace pour laver les vitres ou nettoyer les parties communes, n'hésitez pas à demander un devis gratuit à l'adresse <b>fichetproprete@gmail.com</b>.
+				</p>
+			</section>
+			<!-- Construction sites -->
+			<section role="region" data-section="constructions">
+				<p>
+					Si vous êtes à la recherche d'une personne discrète, soigneuse et efficace pour remettre en état en fin de chantier, n'hésitez pas à demander un devis gratuit à l'adresse <b>fichetproprete@gmail.com</b>.
+				</p>
+			</section>
+			<!-- Contact form -->
+			<section role="region" data-section="contact">
+				<p>
+					Demandez un devis gratuit à l'adresse <b>fichetproprete@gmail.com</b> en remplissant le formulaire ci-dessous.<br>
+					<i>Les champs marqués d'un * sont obligatoires.</i>
+				</p>
+				<form method="POST">
+					<!-- First name input -->
+					<label>
+						<input type="text" name="firstName" required>
+						<span class="label">Prénom *</span>
+					</label>
+					<!-- Last name input -->
+					<label>
+						<input type="text" name="lastName" required>
+						<label class="label">Nom *</label>
+					</label>
+					<!-- Phone number input -->
+					<label>
+						<input type="text" name="phoneNumber">
+						<label class="label">Téléphone</label>
+					</label>
+					<!-- E-mail input -->
+					<label>
+						<input type="email" name="email" required>
+						<label class="label">E-mail *</label>
+					</label>
+					<!-- Address input -->
+					<label>
+						<input type="text" name="address" required>
+						<label class="label">Adresse *</label>
+					</label>
+					<!-- Address (line 2) input -->
+					<label>
+						<input type="text" name="address2">
+						<label class="label">Adresse (ligne 2)</label>
+					</label>
+					<!-- Postal code input -->
+					<label>
+						<input type="text" name="postalCode" required>
+						<label class="label">Code postal *</label>
+					</label>
+					<!-- City input -->
+					<label>
+						<input type="text" name="city" required>
+						<label class="label">Ville *</label>
+					</label>
+					<!-- Submit button -->
+					<button type="submit" name="submit" class="btn">ENVOYER</button>
+				</form>
+			</section>
+			<!-- Contact link -->
+			<a href="mailto:fichetproprete@gmail.com" class="link contact">DEMANDER UN DEVIS GRATUIT</a>
+		</main>
+		<!-- Footer -->
+		<footer role="contentinfo">
+			<!-- Instagram -->
+			<a href="https://www.instagram.com/fichetproprete" target="_blank" class="ig" title="Retrouvez-nous sur Instagram" aria-label="Retrouvez-nous sur Instagram">
+				<ion-icon name="logo-instagram"></ion-icon>
+			</a>
+			<!-- Copyright section -->
+			<div class="copyright">
+				Copyright &copy; 2021 <a href="https://github.com/matteoo34" target="_blank" class="link" title="Profil GitHub de Mattéo Legagneux" aria-label="Profil GitHub de Mattéo Legagneux">Mattéo Legagneux</a>.<br>
+				Tous droits réservés.
+			</div>
+		</footer>
+
+		<!-- Scripts -->
+		<script src="assets/js/main.js"></script>
+		<script src="assets/js/form.js"></script>
+		<!-- Ionicons 5.5.2 -->
+		<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+		<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+	</body>
+
+</html>

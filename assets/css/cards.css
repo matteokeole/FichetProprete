@@ -1,3 +1,5 @@
+/** Cards **/
+
 .card-container {
 	margin: 24px 0;
 	padding: 8px;
@@ -6,4 +8,34 @@
 	background-color: var(--secondary)
 }
 
+/* Content */
+
+.card-container .content {
+	display: flex;
+	align-items: center;
+	margin-bottom: 32px;
+	padding: 8px
+}
+
+.card-container .content ion-icon {
+	margin-right: 8px;
+	opacity: 0.5;
+	font-size: 40px
+}
+
+.card-container .content h2 {margin: 0}
+
+/* Actions */
 .card-container .actions {text-align: right}
+
+/* Specific cards */
+
+.card-estimate {color: var(--card-estimate)}
+
+.card-call {color: var(--card-call)}
+
+.card-call .content-inner {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start
+}

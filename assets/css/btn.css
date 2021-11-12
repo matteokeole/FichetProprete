@@ -1,0 +1,120 @@
+/** Buttons **/
+
+.btn, .link {
+	display: inline-block;
+	border: none;
+	background-color: transparent;
+	cursor: pointer
+}
+.btn {transition-duration: 0.2s}
+.btn:active {
+	/*background-color: rgba(25, 118, 210, 0.4);*/
+	transition-duration: 0.1s
+}
+
+/* Card buttons */
+
+.actions .btn {
+	padding: 8px;
+	border-radius: 6px;
+	font-size: 14px;
+	transition-duration: 0.2s
+}
+.actions .btn:active {
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+	transition-duration: 0.1s
+}
+
+/* Estimate button */
+.card-estimate .btn, .btn[type="submit"] {color: var(--card-estimate)}
+.card-estimate .btn:hover, .btn[type="submit"]:hover {background-color: rgba(74, 20, 140, 0.1)}
+.card-estimate .btn:active, .btn[type="submit"]:active {background-color: rgba(74, 20, 140, 0.2)}
+
+/* Call button */
+.card-call .btn {color: var(--card-call)}
+.card-call .btn:hover {background-color: rgba(76, 175, 80, 0.1)}
+.card-call .btn:active {background-color: rgba(76, 175, 80, 0.2)}
+
+/* Links */
+
+a {text-decoration: none}
+
+.link {
+	position: relative;
+	color: var(--primary);
+	font-size: 16px;
+	transition-duration: 0.4s;
+	z-index: 0
+}
+.link::before {
+	content: "";
+	width: 0;
+	height: 100%;
+	right: 0;
+	position: absolute;
+	background-color: var(--primary-light);
+	border-radius: 2px;
+	transition-duration: 0.4s;
+	z-index: -1
+}
+.link:hover::before {
+	width: 100%;
+	left: 0
+}
+.link:active::before {
+	background-color: var(--primary-light-2);
+	transition-duration: 0.2s
+}
+
+/* Footer link variation */
+
+footer .link {
+	color: var(--secondary);
+	font-size: 14px
+}
+footer .link::before, footer .link:active::before {background-color: var(--secondary)}
+footer .link:hover {color: var(--primary)}
+
+/* Instagram link */
+
+.ig {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 48px;
+	height: 48px;
+	border-radius: 16px;
+	color: var(--secondary);
+	cursor: pointer;
+	font-size: 40px;
+	transition-duration: 0.2s
+}
+.ig:hover, .ig:active {
+	background-color: var(--secondary);
+	color: var(--primary)
+}
+.ig:active {
+	-webkit-transform: scale(0.9);
+	transform: scale(0.9);
+	transition-duration: 0.1s
+}
+
+/* Contact link */
+
+.link.contact {
+	margin-bottom: 8px;
+	padding: 8px
+}
+.link.contact::before {
+	border-radius: 4px;
+	top: 0
+}
+
+/* Form submit button */
+.btn[type="submit"] {
+	padding: 8px;
+	border-radius: 4px;
+	font-size: 16px;
+	font-weight: 700
+}

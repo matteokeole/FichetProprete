@@ -26,13 +26,17 @@ nav .btn::before {
 }
 nav .btn:hover {opacity: 1}
 nav .btn:hover::before, nav .btn.active::before {
-	width: 100%;
-	left: 0
+	width: 90%;
+	left: 5%
 }
-nav .btn:active {background-color: rgba(0, 0, 0, 0.1)}
 
 /* Active button */
 nav .btn.active {
 	opacity: 1;
 	font-weight: 700
 }
+
+/* Media queries */
+
+/* 480px max */
+@media screen and (max-width: 480px) {nav .btn {font-size: 12px}}

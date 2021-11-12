@@ -1,5 +1,7 @@
+/** Banner **/
+
 .banner {
-	height: 33vh;
-	background: url(../images/header.png) center fixed no-repeat;
-	background-size: 100%
+	height: 35vh;
+	background: url(../images/banner.png) center fixed no-repeat;
+	background-size: cover
 }
