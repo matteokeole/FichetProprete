@@ -2,15 +2,13 @@
 
 .btn, .link {
 	display: inline-block;
+	padding: 0;
 	border: none;
 	background-color: transparent;
 	cursor: pointer
 }
 .btn {transition-duration: 0.2s}
-.btn:active {
-	/*background-color: rgba(25, 118, 210, 0.4);*/
-	transition-duration: 0.1s
-}
+.btn:active {transition-duration: 0.1s}
 
 /* Card buttons */
 
