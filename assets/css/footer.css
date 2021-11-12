@@ -3,7 +3,6 @@
 footer {
 	display: flex;
 	justify-content: space-between;
-	height: 80px;
 	padding: 8px;
 	background-color: var(--primary);
 	color: #fff

@@ -32,7 +32,7 @@
 
 .card-estimate {color: var(--card-estimate)}
 
-.card-call {color: var(--card-call)}
+.card-call, .card-call h2 {color: var(--card-call)}
 
 .card-call .content-inner {
 	display: flex;
