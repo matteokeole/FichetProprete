@@ -16,6 +16,13 @@
 		<meta name="keywords" content="olivier, fichet, propreté, nettoyage, entretien, vitres, cleaning, enterprises, mattéo, legagneux">
 		<meta name="author" content="Mattéo Legagneux">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="https://matteoo34.github.io/FichetProprete">
+		<meta property="og:site_name" content="Fichet Propreté">
+		<meta property="og:title" content="Nous nettoyons vos vitres et vos bureaux | Fichet Propreté">
+		<meta property="og:description" content="Entreprise de nettoyage pour particuliers, professionnels, copropriétés et chantiers">
+		<meta property="og:image" content="https://matteoo34.github.io/FichetProprete/assets/images/banner.png">
+		<meta name="twitter:card" content="summary_large_image">
 		<link rel="stylesheet" href="assets/css/main.css">
 		<title>Accueil | Fichet Propreté</title>
 	</head>
