@@ -2,7 +2,8 @@
 
 nav {
 	display: flex;
-	height: 48px
+	height: 48px;
+	background-color: red;
 }
 
 /* Navbar buttons */
