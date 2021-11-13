@@ -8,14 +8,14 @@ nav {
 /* Navbar buttons */
 
 nav .btn {
+	display: block;
 	flex-grow: 1;
 	position: relative;
 	opacity: 0.65;
 	background-color: orange;
 	color: var(--secondary);
-	font-size: 0
+	font-size: 14px
 }
-nav .btn span {font-size: 14px}
 nav .btn::before {
 	content: "";
 	width: 0;
