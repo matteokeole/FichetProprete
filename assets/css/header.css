@@ -19,4 +19,4 @@ header {
 /* Media queries */
 
 /* 900px max */
-@media screen and (max-width: 900px) {.header-title {padding: 15px 0}}
+@media screen and (max-width: 900px) {.header-title {padding: 12px 0}}
