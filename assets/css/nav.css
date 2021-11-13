@@ -13,8 +13,9 @@ nav .btn {
 	opacity: 0.65;
 	background-color: orange;
 	color: var(--secondary);
-	font-size: 14px
+	font-size: 0
 }
+nav .btn span {font-size: 14px}
 nav .btn::before {
 	content: "";
 	width: 0;
