@@ -9,7 +9,9 @@ nav {
 /* Navbar buttons */
 
 nav .btn {
-	-webkit-appearance: none;
+	-webkit-appearance: button !important;
+	margin: 0;
+	padding: 0;
 	flex-grow: 1;
 	position: relative;
 	opacity: 0.65;
