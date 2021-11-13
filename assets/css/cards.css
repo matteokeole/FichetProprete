@@ -30,9 +30,9 @@
 
 /* Specific cards */
 
-.card-estimate, .card-estimate .content-inner {color: var(--card-estimate)}
+.card-estimate {color: var(--card-estimate)}
 
-.card-call, .card-call .content-inner {color: var(--card-call)}
+.card-call {color: var(--card-call)}
 
 .card-call .content-inner {
 	display: flex;
