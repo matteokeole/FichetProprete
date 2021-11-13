@@ -53,7 +53,16 @@ section.current {display: block}
 /* Media queries */
 
 /* 1024px max */
-@media screen and (max-width: 1024px) {section {width: 80% !important}}
+@media screen and (max-width: 1024px) {section {width: 80%}}
+
+/* 900px max */
+@media screen and (max-width: 900px) {.header-title {padding: 12px 0}}
 
 /* 780px max */
-@media screen and (max-width: 780px) {section {width: 90% !important}}
+@media screen and (max-width: 780px) {section {width: 90%}}
+
+/* 480px max */
+@media screen and (max-width: 480px) {
+	section {width: 95%}
+	nav .btn {font-size: 12px}
+}

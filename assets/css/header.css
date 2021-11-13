@@ -15,8 +15,3 @@ header {
 	text-align: center;
 	font-weight: 700
 }
-
-/* Media queries */
-
-/* 900px max */
-@media screen and (max-width: 900px) {.header-title {padding: 12px 0}}
