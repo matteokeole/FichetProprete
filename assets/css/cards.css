@@ -23,10 +23,7 @@
 	font-size: 40px
 }
 
-.card-container .content h2 {
-	margin: 0;
-	color: inherit
-}
+.card-container .content h2 {margin: 0}
 
 /* Actions */
 .card-container .actions {text-align: right}
