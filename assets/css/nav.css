@@ -8,7 +8,7 @@ nav {
 /* Navbar buttons */
 
 nav .btn {
-	display: block;
+	-webkit-appearance: none;
 	flex-grow: 1;
 	position: relative;
 	opacity: 0.65;
